@@ -1,0 +1,16 @@
+<div class="container">
+  <form [formGroup]="form">
+    <div>
+      <label for="timerInterval">Timer Interval (ms):</label>
+      <input type="number" id="timerInterval" formControlName="timerInterval"/>
+    </div>
+    <div>
+      <label for="arraySize">Array Size:</label>
+      <input type="number" id="arraySize" formControlName="arraySize"/>
+    </div>
+  </form>
+
+  <app-data-table [data]="data$ | async">
+  </app-data-table>
+
+</div>

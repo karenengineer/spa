@@ -1,0 +1,30 @@
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Int</th>
+    <th>Float</th>
+    <th>Color</th>
+    <th>Child</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of data; trackBy: trackBy">
+    <td>{{ item.id }}</td>
+    <td>{{ item.int }}</td>
+    <td>{{ item.float }}</td>
+    <td [style.background-color]="item.color">{{ item.color }}</td>
+    <td>
+      <table>
+        <tbody>
+        <tr>
+          <td>{{ item.child.id }}</td>
+          <td [style.background-color]="item.child.color">{{ item.child.color }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+

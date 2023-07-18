@@ -1,0 +1,40 @@
+.container {
+ 	width: fit-content;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+form input[type="number"]:hover {
+  border-color: #999;
+}
+
+form input[type="number"]:focus {
+  border-color: #66afe9;
+  outline: none;
+}
