@@ -1,6 +1,6 @@
 # SpaApp
 
-This project was generated with [Angular CLI] version 15.2.9.
+This project was generated with Angular CLI version 15.2.9.
 
 ## Development server
 
